@@ -1,0 +1,19 @@
+{
+  "id" : "9e5bf18c-d178-4e16-89b5-01a2a6cf043e",
+  "name" : "actuator_health",
+  "request" : {
+    "url" : "/actuator/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"status\":\"UP\"}",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Date" : "Sat, 16 Mar 2019 15:49:29 GMT"
+    }
+  },
+  "uuid" : "9e5bf18c-d178-4e16-89b5-01a2a6cf043e",
+  "persistent" : true,
+  "insertionIndex" : 1
+}
