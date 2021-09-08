@@ -33,6 +33,7 @@ import java.util.UUID;
 public class BeerController {
 
     private static final Integer DEFAULT_PAGE_NUMBER = 0;
+    
     private static final Integer DEFAULT_PAGE_SIZE = 25;
 
     private final BeerService beerService;
@@ -62,7 +63,7 @@ public class BeerController {
 
     @GetMapping(path = {"/{beerId}"},produces = { "application/json" })
     public ResponseEntity<BeerDto>  getBeerById(@PathVariable("beerId") UUID beerId){
-
         return new ResponseEntity<>(beerService.findBeerById(beerId), HttpStatus.OK);
     }
+    
 }
